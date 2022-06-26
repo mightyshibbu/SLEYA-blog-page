@@ -1,0 +1,79 @@
+.flexbox {
+  background-image: url(https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg);
+  background-size: 100%;
+  margin: 0 %;
+  display: flex;
+  
+  padding: 10px;
+  width:100%;
+}
+
+.navitem {
+  align-self: center;
+  text-align: center;
+  width: 30;
+  padding: 4mm;
+  margin: 0mm;
+  font-size: 14px;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+*{
+  margin: 0mm;
+}
+
+.socialmedia{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding-top: 20px;
+   padding-right: 14px;   
+}
+
+.socialmedia div{
+    padding: 5px;
+}
+
+.body{
+    height: 100vh;
+    background-color: white;
+}
+
+.logo{
+    color: aliceblue;
+    font-size: 40px;
+    padding-right: 20px;
+    padding-top: 8px;
+    font-family: 'Bebas Neue';   
+}
+
+.template{
+  background-color: white;
+  
+  height: 50vh;
+  display: flex;
+}
+
+.image{
+    float: left;
+    margin: 0px;
+    width:  100%;
+    height: 1000px;
+    object-fit: cover;
+    padding: 20px;
+}
+.searchbox  {
+  background: white;
+  height: 20px;
+  width: 100px;
+  margin-right: 12px;
+  display: inline-block;
+  border-radius: 9px;
+  text-align: right;
+  
+}
+
+
+.searchicon {
+}
