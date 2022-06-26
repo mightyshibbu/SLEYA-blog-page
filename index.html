@@ -1,69 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
+.flexbox {
+  background-image: url(https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg);
+  background-size: 100%;
+  display: flex;
+  padding: 10px;
+  width:100%;
+}
+.container{
+  width: 100%;
+}
+.navitem {
+  align-self: center;
+  text-align: center;
+  width: 30;
+  padding: 4mm;
+  margin: 0mm;
+  font-size: 14px;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog With a FlexBox</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,500&family=Smooch&display=swap');
-  </style>
-</head>
+*{
+  margin: 0mm;
+}
 
-<body>
-  <div class="container">
-    <div class="flexbox">
-      <div class="logo">$LeyA</div>
-      <div class="navitem">HOME</div>
-      <div class="navitem">ABOUT</div>
-      <div class="navitem">ARCHIVES</div>
-      <div class="navitem">CONTACT ME</div>
+.socialmedia{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding-top: 20px;
+   padding-right: 14px;   
+}
 
-      <div class="socialmedia">
-        <div class="searchbox">
-        
-              <div class="searchicon">
-                <i class="fa fa-search fa-sm" aria-hidden="true"></i>
-              </div>
+.socialmedia div{
+    padding: 5px;
+}
 
-        </div>
-        <div>
-          <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-        </div>
+.body{
+    height: 100vh;
+    background-color: white;
+}
 
-        <div>
-          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-        </div>
-        <div><i class="fab fa-youtube"></i></div>
-        <div><i class="fab fa-linkedin"></i></div>
-      </div>
-    </div>
+.logo{
+    color: aliceblue;
+    font-size: 40px;
+    padding-right: 20px;
+    padding-top: 8px;
+    font-family: 'Bebas Neue';   
+}
 
-    <div class="template">
-      <div class="image">
-        <img src="images\Screenshot 2022-06-05 162139.png" alt="" height="300px" />
-      </div>
-      <div class="image">
-        <img src="images\Screenshot 2022-06-05 162243.png" alt="" height="300px" />
-      </div>
-      <div class="image">
-        <img src="images\Screenshot 2022-06-05 162540.png" alt="" height="300px" />
-      </div>
-      <div class="image">
-        <img src="images\Screenshot 2022-06-05 162727.png" alt="" height="300px" />
-      </div>
-      <div class="image">
-        <img src="images\Screenshot 2022-06-05 162803.png" alt="" height="300px" />
-      </div>
-      <div class="image">
-        <img src="images\Screenshot 2022-06-05 162059.png" alt="" height="300px" />
-      </div>
-    </div>
-  </div>
-</body>
+.template{
+  background-color: white;
+  
+  height: 50vh;
+  width: 100%;
+  display: flex;
+}
 
-</html>
+.image{
+    float: left;
+    margin: 0px;
+    width: 1%
+    height: 1000px;
+    object-fit: cover;
+    padding: 20px;
+}
+.searchbox  {
+  background: white;
+  height: 20px;
+  width: 100px;
+  margin-right: 12px;
+  display: inline-block;
+  border-radius: 9px;
+  text-align: right;
+  
+}
+
+
+.searchicon {
+}
